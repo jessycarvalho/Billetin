@@ -4,17 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="code.js"></script>
+    <script src="api.js"></script>
+
     <title>Document</title>
 </head>
+
+
 <body>
-    <input type="text" id="id" name="" value="" placeholder="ID" />
-    <input type="text" id="login" name="" value="" placeholder="Login" />
-    <input type="text" id="nome" name="" value="" placeholder="Nome" />
-    <input type="text" id="email" name="" value="" placeholder="Email"/>
-    <input type="text" id="telefone" name="" value="" placeholder="Telefone" />
 
-    <button type="submit" onclick="acessoAPI()">Buscar</button>
+    <input type="text" id="id" name="" value=""/>
+    <input type="text" id="nome" name="" value=""/>
+    <input type="text" id="login" name="" value=""/>
+    <input type="text" id="email" name="" value=""/>
+    <input type="text" id="telefone" name="" value=""/>
 
+    <button type="submit" onclick="clienteDados(doGet())">
+       Get
+    </button>
+    <button type="submit" onclick="clienteDados(doPost())">
+       Post
+    </button>
+    <button type="submit" onclick="clienteDados(doPut())">
+       Put
+    </button>
+    <button type="submit" onclick="clienteDados(doDelete())">
+       Delete
+    </button>
+    
 </body>
 </html>
